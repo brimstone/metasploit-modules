@@ -10,22 +10,19 @@ class MetasploitModule < Msf::Auxiliary
 
   def initialize(info = {})
     super(update_info(info,
-                      'Name'           => 'HttpServer mixin example',
-                      'Description'    => "
-                        Here's an example of using the HttpServer mixin
-                      ",
+                      'Name'           => 'Simple File Server',
+                      'Description'    => "Just a simple file server",
                       'License'        => MSF_LICENSE,
-                      'Author'         => ['sinn3r'],
+                      'Author'         => ['brimstone'],
                       'References'     =>
                         [
-                          ['URL', 'http://metasploit.com']
+                          ['URL', 'https://github.com/brimstone/metasploit-modules']
                         ],
-                      'Platform'       => 'win',
+                      'Platform'       => 'any',
                       'Targets'        =>
                         [
                           ['Generic', {}]
                         ],
-                      'DisclosureDate' => 'Apr 1 2013',
                       'DefaultTarget'  => 0))
     register_options([
                        OptString.new('PATH', [true,
