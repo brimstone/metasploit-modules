@@ -18,11 +18,6 @@ class MetasploitModule < Msf::Auxiliary
                         [
                           ['URL', 'https://github.com/brimstone/metasploit-modules']
                         ],
-                      'Platform'       => 'any',
-                      'Targets'        =>
-                        [
-                          ['Generic', {}]
-                        ],
                       'DefaultTarget'  => 0))
     register_options([
                        OptString.new('PATH', [true,
