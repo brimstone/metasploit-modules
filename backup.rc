@@ -1,0 +1,1 @@
+pg_dump -h 127.0.0.1 -U msf msf > /export/db.sql

