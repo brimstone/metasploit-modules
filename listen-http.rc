@@ -1,0 +1,7 @@
+use auxiliary/server/files
+set PATH /pentest/share
+set URIPATH /f
+set SRVPORT 80
+run -j
+
+back

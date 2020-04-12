@@ -7,6 +7,7 @@ alias j "jobs -l"
 alias gen-https "resource /root/.msf4/gen-https.rc"
 alias listen-nc "resource /root/.msf4/listen-nc.rc"
 alias listen-https "resource /root/.msf4/listen-https.rc"
+alias listen-http "resource /root/.msf4/listen-http.rc"
 alias backup "resource /root/.msf4/backup.rc"
 
 set -g ExitOnSession false
