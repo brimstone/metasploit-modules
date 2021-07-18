@@ -1,0 +1,5 @@
+use auxiliary/server/files
+set PATH /pentest/share
+set SRVPORT 443
+set SSLCert /export/cert.pem
+set URIPATH /s
